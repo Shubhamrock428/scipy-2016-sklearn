@@ -38,7 +38,7 @@ def demo():
         filename = secure_filename(upload_file.filename)
         upload_file.save(os.path.join(UPLOAD_FOLDER, filename))
         image_size=128
-        num_channels=89
+        num_channels=389
         images = []
         # Reading the image using OpenCV
         image = cv2.imread(os.path.join(UPLOAD_FOLDER, filename))
